@@ -8,6 +8,9 @@ import EditCompany from "./pages/EditCompany"
 import Projects from "./pages/Projects"
 import Profile from "./pages/Profile"
 import Favourites from "./pages/Favourites"
+import Login from "./pages/auth/Login"
+import Signup from "./pages/auth/Signup"
+import ForgotPassword from "./pages/auth/ForgotPassword"
 
 export default function App() {
   return (
@@ -21,6 +24,11 @@ export default function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/favourites" element={<Favourites />} />
+
+        {/* Auth */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
       </Route>
     </Routes>
   )
