@@ -1,21 +1,24 @@
 import { useState, useEffect } from "react"
 import { Link, NavLink, useLocation } from "react-router-dom"
 import { AnimatePresence, motion } from "framer-motion"
-import { Menu, X, Heart, Building2, Plus } from "lucide-react"
+import { Menu, X, Heart, Building2, Plus, Sparkles } from "lucide-react"
 import Button from "../ui/Button"
+import NotificationBell from "./NotificationBell"
+import AccountMenu from "./AccountMenu"
 import { useApp } from "../../store/AppContext"
 import { cn } from "../../lib/utils"
 
 const links = [
   { to: "/companies", label: "Discover" },
   { to: "/projects", label: "Projects" },
-  { to: "/create-company", label: "List your firm" },
+  { to: "/ai-recommend", label: "AI Match" },
+  { to: "/pricing", label: "Pricing" },
 ]
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const { favourites } = useApp()
+  const { favourites, account, isAuthenticated } = useApp()
   const location = useLocation()
 
   useEffect(() => setOpen(false), [location.pathname])
@@ -26,6 +29,8 @@ export default function Navbar() {
     window.addEventListener("scroll", onScroll)
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
+
+  const dashHref = account?.role === "company" ? "/dashboard" : "/account"
 
   return (
     <header
@@ -72,12 +77,25 @@ export default function Navbar() {
               </span>
             )}
           </Link>
-          <Button to="/profile" variant="outline" size="sm">
-            Profile
-          </Button>
-          <Button to="/create-company" variant="primary" size="sm">
-            <Plus size={16} /> Add firm
-          </Button>
+
+          {isAuthenticated ? (
+            <>
+              <NotificationBell />
+              <Button to={dashHref} variant="outline" size="sm">
+                Dashboard
+              </Button>
+              <AccountMenu />
+            </>
+          ) : (
+            <>
+              <Button to="/login" variant="ghost" size="sm">
+                Sign in
+              </Button>
+              <Button to="/signup" variant="primary" size="sm">
+                <Plus size={16} /> Get started
+              </Button>
+            </>
+          )}
         </div>
 
         <button
@@ -116,12 +134,28 @@ export default function Navbar() {
               <NavLink to="/favourites" className="rounded-xl px-4 py-3 text-base font-medium text-muted-foreground">
                 Favourites ({favourites.length})
               </NavLink>
-              <NavLink to="/profile" className="rounded-xl px-4 py-3 text-base font-medium text-muted-foreground">
-                Profile
-              </NavLink>
-              <Button to="/create-company" variant="primary" className="mt-2 w-full">
-                <Plus size={16} /> Add your firm
-              </Button>
+
+              {isAuthenticated ? (
+                <>
+                  <NavLink to={dashHref} className="rounded-xl px-4 py-3 text-base font-medium text-muted-foreground">
+                    Dashboard
+                  </NavLink>
+                  <NavLink to="/ai-recommend" className="rounded-xl px-4 py-3 text-base font-medium text-muted-foreground">
+                    <span className="inline-flex items-center gap-2">
+                      <Sparkles size={16} className="text-accent" /> AI Match
+                    </span>
+                  </NavLink>
+                </>
+              ) : (
+                <div className="mt-2 flex flex-col gap-2">
+                  <Button to="/login" variant="outline" className="w-full">
+                    Sign in
+                  </Button>
+                  <Button to="/signup" variant="primary" className="w-full">
+                    <Plus size={16} /> Get started
+                  </Button>
+                </div>
+              )}
             </div>
           </motion.div>
         )}
