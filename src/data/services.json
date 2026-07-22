@@ -1,0 +1,10 @@
+[
+  { "id": "architecture", "name": "Architecture", "icon": "Compass" },
+  { "id": "interior-design", "name": "Interior Design", "icon": "Sofa" },
+  { "id": "construction", "name": "Construction", "icon": "HardHat" },
+  { "id": "structural-design", "name": "Structural Design", "icon": "Frame" },
+  { "id": "mep", "name": "MEP", "icon": "Cable" },
+  { "id": "project-management", "name": "Project Management", "icon": "ClipboardList" },
+  { "id": "real-estate", "name": "Real Estate", "icon": "Building2" },
+  { "id": "approvals", "name": "Approvals", "icon": "Stamp" }
+]

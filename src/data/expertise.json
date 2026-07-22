@@ -1,0 +1,8 @@
+[
+  { "id": "residential", "name": "Residential" },
+  { "id": "commercial", "name": "Commercial" },
+  { "id": "villas", "name": "Villas" },
+  { "id": "apartments", "name": "Apartments" },
+  { "id": "offices", "name": "Offices" },
+  { "id": "hospitality", "name": "Hospitality" }
+]

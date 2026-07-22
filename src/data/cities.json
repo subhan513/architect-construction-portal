@@ -1,0 +1,10 @@
+[
+  { "id": "dubai", "name": "Dubai", "lat": 25.2048, "lng": 55.2708 },
+  { "id": "abu-dhabi", "name": "Abu Dhabi", "lat": 24.4539, "lng": 54.3773 },
+  { "id": "riyadh", "name": "Riyadh", "lat": 24.7136, "lng": 46.6753 },
+  { "id": "doha", "name": "Doha", "lat": 25.2854, "lng": 51.531 },
+  { "id": "mumbai", "name": "Mumbai", "lat": 19.076, "lng": 72.8777 },
+  { "id": "bengaluru", "name": "Bengaluru", "lat": 12.9716, "lng": 77.5946 },
+  { "id": "london", "name": "London", "lat": 51.5074, "lng": -0.1278 },
+  { "id": "singapore", "name": "Singapore", "lat": 1.3521, "lng": 103.8198 }
+]

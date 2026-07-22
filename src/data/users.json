@@ -1,0 +1,21 @@
+[
+  {
+    "id": "u1",
+    "name": "Ayesha Rahman",
+    "email": "ayesha.rahman@example.com",
+    "avatar": "/placeholder-user.jpg",
+    "city": "dubai",
+    "role": "Homeowner",
+    "favourites": ["atelier-nord", "loom-interiors"],
+    "quoteRequests": [
+      {
+        "id": "q1",
+        "company": "Atelier Nord",
+        "projectType": "Villa",
+        "budget": "$500k – $1M",
+        "status": "In review",
+        "date": "2024-05-12"
+      }
+    ]
+  }
+]

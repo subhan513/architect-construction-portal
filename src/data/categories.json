@@ -1,0 +1,38 @@
+[
+  {
+    "id": "architecture",
+    "name": "Architecture",
+    "icon": "Compass",
+    "description": "Concept, design & planning for landmark buildings."
+  },
+  {
+    "id": "interior-design",
+    "name": "Interior Design",
+    "icon": "Sofa",
+    "description": "Beautiful, functional interiors tailored to you."
+  },
+  {
+    "id": "construction",
+    "name": "Construction",
+    "icon": "HardHat",
+    "description": "End-to-end building & general contracting."
+  },
+  {
+    "id": "structural-design",
+    "name": "Structural Design",
+    "icon": "Frame",
+    "description": "Safe, efficient structural engineering."
+  },
+  {
+    "id": "consultants",
+    "name": "Consultants",
+    "icon": "ClipboardList",
+    "description": "Expert advisory across every project phase."
+  },
+  {
+    "id": "real-estate",
+    "name": "Real Estate",
+    "icon": "Building2",
+    "description": "Development & property advisory services."
+  }
+]

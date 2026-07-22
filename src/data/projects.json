@@ -1,0 +1,62 @@
+[
+  {
+    "id": "p1",
+    "name": "The Dune House",
+    "companyId": "atelier-nord",
+    "image": "/images/project-4.png",
+    "city": "dubai",
+    "year": 2023,
+    "category": "Villas",
+    "description": "A private desert villa with a floating roof plane, shaded courtyards and an infinity edge pool framing the horizon."
+  },
+  {
+    "id": "p2",
+    "name": "Olaya Business Tower",
+    "companyId": "meridian-build",
+    "image": "/images/project-2.png",
+    "city": "riyadh",
+    "year": 2022,
+    "category": "Offices",
+    "description": "A 32-storey commercial tower featuring a high-performance glass facade and column-free floor plates."
+  },
+  {
+    "id": "p3",
+    "name": "Bandra Terrace Home",
+    "companyId": "loom-interiors",
+    "image": "/images/project-3.png",
+    "city": "mumbai",
+    "year": 2024,
+    "category": "Residential",
+    "description": "A full interior renovation of a sea-facing apartment with custom joinery, warm oak and layered lighting."
+  },
+  {
+    "id": "p4",
+    "name": "Courtyard Villa",
+    "companyId": "atelier-nord",
+    "image": "/images/project-1.png",
+    "city": "abu-dhabi",
+    "year": 2021,
+    "category": "Villas",
+    "description": "A family villa organised around a green central courtyard, blending indoor and outdoor living."
+  },
+  {
+    "id": "p5",
+    "name": "Marigold Boutique Hotel",
+    "companyId": "loom-interiors",
+    "image": "/images/project-5.png",
+    "city": "bengaluru",
+    "year": 2023,
+    "category": "Hospitality",
+    "description": "A 24-key boutique hotel with terracotta arches, bespoke furniture and a rooftop lounge."
+  },
+  {
+    "id": "p6",
+    "name": "Corniche Residences",
+    "companyId": "meridian-build",
+    "image": "/images/project-6.png",
+    "city": "doha",
+    "year": 2024,
+    "category": "Apartments",
+    "description": "A waterfront residential development of 180 apartments with landscaped balconies and shared amenities."
+  }
+]
